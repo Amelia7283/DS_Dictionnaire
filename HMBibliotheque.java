@@ -57,8 +57,8 @@ public class HMBibliotheque {
     //Methode Mettre à jour la date d'emprunt
     public static void majDate(String nomLecteur, Emprunt emp, String nouvelleDate) {
         if (lecteursEmprunt.containsKey(nomLecteur)){
-            for(){
-                
+            if(lecteursEmprunt.containsValue(emp)){
+                date.put(nouvelleDate);
             }
         }
     }
