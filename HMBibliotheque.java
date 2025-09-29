@@ -65,7 +65,15 @@ public class HMBibliotheque {
     
     //Méthode compter les emprunts d’un lecteur
     public static void compterEmprunts(String nom){
-        
+        if (lecteursEmprunt.containsKey(nom)){
+            System.out.println("Nom: "+nom);
+            for (Emprunt e: lecteursEmprunt.get(nom)){
+                return e.getValue().size();
+            }
+        }
+        else {
+            System.out.println("Ce lecteur n'existe pas");
+        }
     }
     
     //Méthode pour Trouver le lecteur le plus emprunteur
