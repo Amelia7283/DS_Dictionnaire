@@ -53,4 +53,23 @@ public class HMBibliotheque {
             System.out.println("Erreur!");
         }
     }
+
+    //Methode Mettre à jour la date d'emprunt
+    public static void majDate(String nomLecteur, Emprunt emp, String nouvelleDate) {
+        if (lecteursEmprunt.containsKey(nomLecteur)){
+            for(){
+                
+            }
+        }
+    }
+    
+    //Méthode compter les emprunts d’un lecteur
+    public static void compterEmprunts(String nom){
+        
+    }
+    
+    //Méthode pour Trouver le lecteur le plus emprunteur
+    public static void trouverPlusGrosLecteur(){
+        
+    }
 }
