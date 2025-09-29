@@ -45,6 +45,12 @@ public class HMBibliotheque {
     
     //Méthode pour ajouter un emprunt à un lecteur existant
     public static void ajouterEmprunt(String nomLecteur, Emprunt emp){
-        
+        if (lecteursEmprunt.containsKey(nomLecteur)){
+            lecteursEmprunt.get(nomLecteur).add(emp);
+            System.out.println("L'emprunt a bien était ajouter.");
+        }
+        else {
+            System.out.println("Erreur!");
+        }
     }
 }
