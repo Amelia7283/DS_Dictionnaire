@@ -58,7 +58,7 @@ public class HMBibliotheque {
     public static void majDate(String nomLecteur, Emprunt emp, String nouvelleDate) {
         if (lecteursEmprunt.containsKey(nomLecteur)){
             if(lecteursEmprunt.containsValue(emp)){
-                date.put(nouvelleDate);
+                getDate().put(nouvelleDate);
             }
         }
     }
